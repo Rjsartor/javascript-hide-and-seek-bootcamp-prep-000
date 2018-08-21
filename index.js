@@ -12,4 +12,5 @@ function increaseRankBy(n) {
   for (let i = 0; i < lis.length; i++) {
   ranks[i].innerHTML = (i + 1).parseInt();
   }
+  return ranks
 }
