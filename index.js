@@ -6,10 +6,9 @@ function nestedTarget() {
   return document.getElementById('nested').querySelector('div.target')
 }
 
-function increaseRankBy(n) {
-  var rank = document.getElementById('app').querySelectorAll('ranked-list li')
-  
-  for (let i = 0; i < rank.length; i++) {
-  rank[i].innerHTML = ((parseInt(Rank[i].innerHTML)) + n);
-  }
-}
+	function increaseRankBy(n){
+  const upRank = document.getElementById('app').querySelectorAll('ul.ranked-list')
+   for (let i = 0; i < upRank.length; i++){
+    upRank[i].innerHTML = ((parseInt(upRank[i].innerHTML)) + n)
+    }
+ }
